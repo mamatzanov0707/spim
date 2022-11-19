@@ -1,0 +1,339 @@
+@media (max-width: 1400px) {
+.container{
+  width: 90%;
+}
+}
+@media (max-width: 1200px) {
+  #sill{
+    .sill {
+      &--var {
+        margin-top: 90px;
+      }
+    }
+  }
+  #sold{
+    .sold {
+      &--fell {
+      }
+      &--cut{
+        margin-top: 40px!important;
+
+      }
+      }
+  }
+}
+@media (max-width: 1060px) {
+  #header{
+    .header{
+      &--car{
+        a{
+          display: none;
+        }
+      }
+    }
+  }
+  #spas{
+    .spas{
+      height: 370px!important;
+      &--car{
+      }
+      &--cart{
+        padding: 30px 30px;
+        }
+    }
+  }
+}
+@media (max-width: 1024px) {
+
+}
+@media (max-width: 992px) {
+
+}
+@media (max-width: 768px) {
+  #footer{
+    .footer{
+      &--hav{
+        }
+      &--car {
+        padding: 20px 20px;
+      }
+        &--cart {
+        }
+    }
+  }
+}
+@media (max-width: 720px) {
+  #spas{
+    .spas{
+      height: 400px;
+      h1{
+        font-size: 30px!important;
+      }
+      &--car{
+      }
+      &--cart{
+        }
+    }
+  }
+}
+
+@media (max-width: 605px) {
+  #hero{
+    .hero{
+      img{
+        width: 90%;
+      }
+      &--cart{
+        }
+    }
+  }
+  #hit{
+    padding-top: 3%;
+    .hit{
+      &--hope {
+        h1 {
+          font-size: 33px!important;
+        }
+        input {
+          padding: 15px 20px!important;
+        }
+      }
+      &--cut{
+        input{
+          padding: 35px 163px;
+          margin-top: 10px;
+        }
+      }
+      img{
+        width: 90% !important;
+      }
+
+    }
+  }
+}
+@media (max-width: 640px) {
+  #spas{
+    .spas{
+      height: 500px!important;
+      &--car{
+      }
+      &--cart{
+      }
+      &--carb{
+        padding: 30px 20px;
+        span{
+        }
+      }
+
+    }
+  }
+
+}
+@media (max-width: 590px) {
+  #spas{
+    .spas{
+      height: 550px!important;
+      h1{
+        font-size: 25px!important;
+      }
+      &--car{
+      }
+      &--cart{
+      }
+      &--carb{
+        padding: 30px 20px;
+        span{
+        }
+      }
+
+    }
+  }
+  #sill{
+    .sill {
+      padding: 50px;
+      &--var {
+      }
+    }
+  }
+}
+@media (max-width: 576px) {
+  #header{
+    .header{
+      &--car{
+        button {
+          flex-wrap: wrap!important;
+        }
+      }
+    }
+  }
+}
+@media (max-width: 524px) {
+  #hero{
+    .hero{
+      &--cart{
+        h1{
+          font-size: 40px!important;
+        }
+        .hero--cart__haw{
+          margin: 10px;
+        }
+      }
+    }
+  }
+  #hit{
+    .hit{
+      &--hope {
+        h1 {
+          font-size: 28px!important;
+        }
+      }
+
+    }
+  }
+  #sold{
+    .sold {
+      &--fell {
+      }
+      &--cut{
+      }
+      &--cart{
+        height: 200px!important;
+
+        span{
+          padding: 20px 20px!important;
+
+        }
+      }
+    }
+  }
+
+}
+
+@media (max-width: 452px) {
+  #spas{
+    .spas{
+      height: 570px!important;
+      h1{
+        font-size: 20px!important;
+      }
+      &--car{
+      }
+      &--cart{
+      }
+      &--carb{
+        padding: 30px 20px;
+        span{
+        }
+      }
+
+    }
+  }
+  #hit{
+    .hit{
+      &--hope {
+        h1 {
+          font-size: 23px!important;
+        }
+      }
+
+    }
+  }
+}
+@media (max-width: 400px) {
+  #hero{
+    .hero{
+      &--cart{
+        h1{
+          font-size: 30px!important;
+        }
+      }
+    }
+  }
+  #spas{
+    .spas{
+      height: 570px!important;
+      h1{
+        font-size: 18px!important;
+      }
+      &--car{
+      }
+      &--cart{
+        margin-top: -10px ;
+        .spas--haw{
+          width: 50px!important;
+        }
+
+      }
+      &--carb{
+        padding: 30px 20px;
+        .spas--haw{
+          width: 50px!important;
+        }
+      }
+
+    }
+  }
+
+}
+@media (max-width: 376px) {
+  #header{
+    .header{
+      img{
+        width: 90%;
+      }
+      &--car{
+        button{
+          margin-top: 10px!important;
+        }
+        }
+    }
+  }
+  #sold{
+    .sold {
+      h1{
+        font-size: 33px!important;
+      }
+      &--fell {
+      }
+      &--bar{
+        img{
+          padding: 20px 20px;
+        }
+      }
+    }
+  }
+
+}
+@media (max-width: 360px) {
+  #hit{
+    .hit{
+      &--hope {
+        h1 {
+          font-size: 20px!important;
+        }
+      }
+
+    }
+  }
+  #footer{
+    .footer{
+      &--hav{
+        img{
+          width: 90%;
+        }
+      }
+      &--car {
+        padding: 20px 20px;
+      }
+      &--cart {
+      }
+    }
+  }
+
+}
+
+@media (max-width: 320px) {
+
+}
+
+
