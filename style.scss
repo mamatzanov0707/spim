@@ -6,6 +6,8 @@
 #header{
   padding-top: 1%;
   background: #FFFFFF;
+  animation: haw 2s alternate linear;
+  cursor: pointer;
   .header{
     @include center();
     &--car{
@@ -26,9 +28,25 @@
     }
   }
 }
+@keyframes haw {
+  0% {
+    transform:translateY(-90px);
+
+  }
+  20% {
+    transform:translateY(-90px);
+     }
+  50%{
+    transform:translateY(-90px);
+
+  }
+}
 
 #hero{
   padding-top: 3%;
+  animation: head 2s ease-in-out;
+  transition: 4s;
+
   .hero{
     @include center();
     img{
@@ -57,9 +75,30 @@
     }
   }
 }
+@keyframes head  {
+  0%{
+    transform: translateX(-1300px);
+  }
+  20%{
+    transform: matrix(-400px);
+    background: #CB1D95 ;
+  }
+  40%{
+    transform: translateY(100px);
+    background: yellow;
+  }
+  60%{
+    transform: translatey(300px);
+    background: red;
+  }
+  100%{
+    transform: translateY(0);
+  }
+}
 
 #spas{
   padding-top: 13%;
+  animation: slidein 2s ease-in-out;
   .spas{
     max-width: 1160px;
     height: 254px;
@@ -133,9 +172,19 @@
 
   }
 }
+@keyframes slidein {
+  from {
+    transform: translateX(0%);
+  }
+
+  to {
+    transform: translateX(100%);
+  }
+}
 
 #sill{
   padding-top: 13%;
+  animation: identifier 2s ease-in-out;
   .sill {
     h2 {
       font-weight: 700;
@@ -197,6 +246,7 @@
       margin-top: 30px;
   }
   &--ait {
+    padding: 10px 10px;
     span {
       font-weight: 800;
       font-size: 30px;
@@ -231,9 +281,22 @@
     }
   }
 }
+@keyframes identifier {
+  0% {
+   transform: translateY(122px);
+  }
+  30% {
+    transform: translateY(200px);
+  }
+  68%,
+  72% {
+    transform: rotateX(-3000px);
+  }
 
+}
 #hit{
   padding-top: 13%;
+  animation: hero 2s ease-in-out;
   .hit{
     @include center();
 
@@ -288,8 +351,18 @@
   }
 }
 
+@keyframes hero {
+  0%{
+    transform: translateX(-1300px);
+  }
+  100%{
+    transform: translateX(1350px);
+  }
+  
+}
 #sold{
   padding-top: 13%;
+  animation:  moveInLeft 3s ease-in-out;
   .sold {
     h1 {
       font-weight: 700;
@@ -367,9 +440,25 @@
     }
   }
 }
+@keyframes moveInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-100px);
+  }
+
+  80% {
+    transform: translateX(10px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
 
 #footer{
   padding-top: 13%;
+  animation: slidein 2s ease-in-out;
   .footer{
     @include center();
     &--hav{
@@ -383,6 +472,13 @@
       }
       button{
         @include btm();
+        @keyframes btm {
+          0% {
+          }
+          50%{
+            transform:translateX(-890px);
+          }
+        }
       }
     }
     &--car{
@@ -417,5 +513,15 @@
         color: $bl;
       }
     }
+  }
+}
+
+@keyframes slidein {
+  from {
+    transform: translateX(0%);
+  }
+
+  to {
+    transform: translateX(100%);
   }
 }

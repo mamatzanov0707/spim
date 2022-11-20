@@ -16,12 +16,13 @@
         color:$bl;
         margin: 20px;
         &:hover{
-          border-bottom: 2px solid $reb;
+          border-bottom: 2px solid red;
           color: blue;
         }
       }
       button{
-        @include btm();
+        @include btn()
+
       }
     }
   }
@@ -51,7 +52,7 @@
       button{
         @include btn();
       }
-      .hero--cart__haw{
+      &__haw{
         @include btn();
       }
     }
@@ -206,7 +207,7 @@
       }
     }
     .sill--code {
-      @include btn1();
+      @include btn();
       margin-top: 50px;
       margin-left: 30px;
     }
@@ -276,7 +277,7 @@
         color: $bl;
       }
       button{
-        @include btm();
+        @include btn();
       }
     }
     img{
@@ -380,7 +381,7 @@
         padding: 15px 0;
       }
       button{
-        @include btn1();
+        @include btn();
       }
     }
     &--car{

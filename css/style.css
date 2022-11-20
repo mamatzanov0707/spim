@@ -189,6 +189,8 @@ body {
 #header {
   padding-top: 1%;
   background: #FFFFFF;
+  animation: haw 2s alternate linear;
+  cursor: pointer;
 }
 #header .header {
   display: flex;
@@ -217,13 +219,27 @@ body {
 }
 #header .header--car button:hover {
   background: #8F7CEC;
+  transition: 0.7s;
   color: #FFF;
   border-radius: 5px;
   box-shadow: 0 0 5px #8F7CEC, 0 0 50px #8F7CEC, 0 0 100px #8F7CEC;
 }
 
+@keyframes haw {
+  0% {
+    transform: translateY(-90px);
+  }
+  20% {
+    transform: translateY(-90px);
+  }
+  50% {
+    transform: translateY(-90px);
+  }
+}
 #hero {
   padding-top: 3%;
+  animation: head 2s ease-in-out;
+  transition: 4s;
 }
 #hero .hero {
   display: flex;
@@ -276,8 +292,29 @@ body {
   box-shadow: 0 0 5px #8F7CEC, 0 0 50px #8F7CEC, 0 0 100px #8F7CEC;
 }
 
+@keyframes head {
+  0% {
+    transform: translateX(-1300px);
+  }
+  20% {
+    transform: matrix(-400px);
+    background: #CB1D95;
+  }
+  40% {
+    transform: translateY(100px);
+    background: yellow;
+  }
+  60% {
+    transform: translatey(300px);
+    background: red;
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
 #spas {
   padding-top: 13%;
+  animation: slidein 2s ease-in-out;
 }
 #spas .spas {
   max-width: 1160px;
@@ -345,8 +382,17 @@ body {
   margin-left: 220px;
 }
 
+@keyframes slidein {
+  from {
+    transform: translateX(0%);
+  }
+  to {
+    transform: translateX(100%);
+  }
+}
 #sill {
   padding-top: 13%;
+  animation: identifier 2s ease-in-out;
 }
 #sill .sill h2 {
   font-weight: 700;
@@ -404,6 +450,9 @@ body {
   border: 1px solid rgba(107, 24, 24, 0.62);
   margin-top: 30px;
 }
+#sill .sill--ait {
+  padding: 10px 10px;
+}
 #sill .sill--ait span {
   font-weight: 800;
   font-size: 30px;
@@ -425,6 +474,7 @@ body {
 }
 #sill .sill .sill--code:hover {
   background: #8F7CEC;
+  transition: 0.7s;
   color: #FFF;
   border-radius: 5px;
   box-shadow: 0 0 5px #8F7CEC, 0 0 50px #8F7CEC, 0 0 100px #8F7CEC;
@@ -446,8 +496,20 @@ body {
   padding: 10px;
 }
 
+@keyframes identifier {
+  0% {
+    transform: translateY(122px);
+  }
+  30% {
+    transform: translateY(200px);
+  }
+  68%, 72% {
+    transform: rotateX(-3000px);
+  }
+}
 #hit {
   padding-top: 13%;
+  animation: hero 2s ease-in-out;
 }
 #hit .hit {
   display: flex;
@@ -500,6 +562,7 @@ body {
 }
 #hit .hit--cut button:hover {
   background: #8F7CEC;
+  transition: 0.7s;
   color: #FFF;
   border-radius: 5px;
   box-shadow: 0 0 5px #8F7CEC, 0 0 50px #8F7CEC, 0 0 100px #8F7CEC;
@@ -508,8 +571,17 @@ body {
   width: 500px;
 }
 
+@keyframes hero {
+  0% {
+    transform: translateX(-1300px);
+  }
+  100% {
+    transform: translateX(1350px);
+  }
+}
 #sold {
   padding-top: 13%;
+  animation: moveInLeft 3s ease-in-out;
 }
 #sold .sold h1 {
   font-weight: 700;
@@ -581,8 +653,22 @@ body {
   margin-top: -10px;
 }
 
+@keyframes moveInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-100px);
+  }
+  80% {
+    transform: translateX(10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
 #footer {
   padding-top: 13%;
+  animation: slidein 2s ease-in-out;
 }
 #footer .footer {
   display: flex;
@@ -608,9 +694,15 @@ body {
 }
 #footer .footer--hav button:hover {
   background: #8F7CEC;
+  transition: 0.7s;
   color: #FFF;
   border-radius: 5px;
   box-shadow: 0 0 5px #8F7CEC, 0 0 50px #8F7CEC, 0 0 100px #8F7CEC;
+}
+@keyframes btm {
+  50% {
+    transform: translateX(-890px);
+  }
 }
 #footer .footer--car {
   display: flex;
@@ -641,6 +733,15 @@ body {
   font-size: 16px;
   line-height: 36px;
   color: #333;
+}
+
+@keyframes slidein {
+  from {
+    transform: translateX(0%);
+  }
+  to {
+    transform: translateX(100%);
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
